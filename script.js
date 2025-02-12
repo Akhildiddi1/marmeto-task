@@ -24,9 +24,7 @@ function formatPrice(price) {
 
 
 function renderCart() {
-    console.log(cartData);
-    console.log(Object.keys(cartData));
-    console.log(Object.values(cartData));
+    // console.log(cartData);
     let cartItemsContainer = document.getElementById("cart-items");
     cartItemsContainer.innerHTML = "";
 
@@ -63,7 +61,7 @@ function renderCart() {
 //update quantity
 function updateQuantity(index, newQuantity) {
     newQuantity = parseInt(newQuantity);
-    console.log("value", newQuantity);
+    // console.log("value", newQuantity);
     if (newQuantity < 1) return;
 
     cartData.items[index].quantity = newQuantity;
